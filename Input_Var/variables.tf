@@ -11,5 +11,5 @@ variable "separator" {
   default = "."
 }
 variable "length" {
-  default = "2"
+  default = "1"
 }

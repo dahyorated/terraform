@@ -11,3 +11,8 @@ resource "random_pet" "my_pet" {
    length = var.length
 
 }
+
+output "pet-name" {
+  value = random_pet.my_pet.id
+  description = "Records the value of pet ID genertaed from random_pet resource"
+}

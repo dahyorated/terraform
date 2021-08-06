@@ -1,1 +1,1 @@
-my favorite pet is Miles!
+my favorite pet is {random_pet.my_pet.id}
