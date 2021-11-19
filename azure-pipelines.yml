@@ -1,4 +1,14 @@
 # Starter pipeline
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Major VS subscription(d0afe958-a32a-4df1-86d2-672fa1a7f707)'
+    subscriptionId: 'd0afe958-a32a-4df1-86d2-672fa1a7f707'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'ziktest'
+    location: 'East US'
+    templateLocation: 'Linked artifact'
+    deploymentMode: 'Incremental'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
